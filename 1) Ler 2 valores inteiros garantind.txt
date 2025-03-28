@@ -1,0 +1,36 @@
+1) Ler 2 valores inteiros garantindo que o segundo valor lido será sempre maior que o primeiro valor lido. Calcule e escreva a soma dos inteiros existentes entre os 2 valores lidos (incluindo os valores lidos).
+
+2) Usando a seguinte lista de temperatutas [23.6, 37.9, 25.1, 19.0, 29.8],escreva código que identifique e retorne.a) Menor temperaturab) Maior temperaturac) Temperatura média
+
+3) Faça um algoritmo para ler 50 números e armazenar em uma lista,verificar e escrever se existem números repetidos na lista e em que posições se encontram.
+
+4) Escreva uma função que recebe por parâmetro a seguinte lista denotas escolares [73, 67,38 ,33]. A função deve percorrer a lista de notas,aplicando as seguintes regras e retornar as notas finais.
+
+Regras:
+
+●Se a diferença entre uma nota e o próximo número múltiplo de 5 for menor que 3, arredonde a nota para o próximo múltiplo de 5
+
+●Se a nota for menor que 38 nada acontece com a nota.
+
+Exemplos: Se uma nota for igual a 84, seu próximo múltiplo de 5 é 85, logo a nota será arredondada para para 85, pois a diferença (85-84) é menor que 3.
+
+
+def val2Maior(val1, val2):
+    
+    cont = int
+    
+    if val2 > val1:
+        while val2 >= val1: 
+            cont += val1
+            val1 += 1
+    else:
+        val2 = int(input('Digite um valor maior que o primeiro valor: '))
+        val2Maior(val1, val2) 
+        return
+
+    print('Soma dos intervalos:', cont)
+
+val1 = int(input('Digite o primeiro valor: '))
+val2 = int(input('Digite o segundo valor: '))
+
+val2Maior(val1, val2)

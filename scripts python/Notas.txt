@@ -1,0 +1,4 @@
+* input é o mesmo que scanf do c (entrada);
+* + concatena igual no Java, pode-se usar , também, mas dependendo do caso um é melhor que outro, deixando ou não espaço;
+* roda no terminal, idle ou outro interpretador que tenha Python
+* se você não definir a variável de entrada, se comportara coo String
